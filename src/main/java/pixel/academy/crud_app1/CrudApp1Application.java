@@ -18,9 +18,22 @@ public class CrudApp1Application {
     @Bean
     CommandLineRunner commandLineRunner(StudentDAO studentDAO) {
         return args -> {
-          createStudent(studentDAO);
-          createMultipleStudents(studentDAO);
+          //createStudent(studentDAO);
+          //createMultipleStudents(studentDAO);
+            readStudent(studentDAO);
         };
+    }
+
+    private void readStudent(StudentDAO studentDAO) {
+        //create an object the type Student
+
+        //save student in database
+
+        //show id student save
+
+        //get student by ID (Primary Key)
+
+        //display details of the student
     }
 
     private void createStudent(StudentDAO studentDAO) {
