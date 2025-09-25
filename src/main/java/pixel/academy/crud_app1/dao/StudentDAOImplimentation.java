@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import pixel.academy.crud_app1.entity.Student;
 
 @Repository
-public class StudentDAOImplimentation implements StudenDAO {
+public class StudentDAOImplimentation implements StudentDAO {
 
     // Camp pentru EntityManager (va fi utilizat pentru interactiunea cu baza de date)
     private EntityManager entityManager;
