@@ -26,7 +26,8 @@ public class CrudApp1Application {
             //queryForStudent(studentDAO);
            // queryForStudentByLastName(studentDAO);
             //updateStudent(studentDAO);
-            deleteStudent(studentDAO);
+            //deleteStudent(studentDAO);
+            //
         };
     }
 
