@@ -24,7 +24,8 @@ public class CrudApp1Application {
           //createMultipleStudents(studentDAO);
            // readStudent(studentDAO);
             //queryForStudent(studentDAO);
-            queryForStudentByLastName(studentDAO);
+           // queryForStudentByLastName(studentDAO);
+            updateStudent(studentDAO);
         };
     }
 
@@ -103,6 +104,17 @@ public class CrudApp1Application {
         for (Student newStudent : theStudents) {
             System.out.println(newStudent);
         }
+    }
+    private void updateStudent(StudentDAO studentDAO) {
+
+        //find student in database use ID
+
+        //modify firstname of the student "ION"
+
+        //save modified data in BD
+
+        //display details of the update student
+
     }
 
 }
