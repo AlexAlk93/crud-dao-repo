@@ -7,6 +7,8 @@ import org.springframework.context.annotation.Bean;
 import pixel.academy.crud_app1.dao.StudentDAO;
 import pixel.academy.crud_app1.entity.Student;
 
+import java.util.List;
+
 @SpringBootApplication
 public class CrudApp1Application {
 
@@ -20,7 +22,8 @@ public class CrudApp1Application {
         return args -> {
           //createStudent(studentDAO);
           //createMultipleStudents(studentDAO);
-            readStudent(studentDAO);
+           // readStudent(studentDAO);
+            queryForStudent(studentDAO);
         };
     }
 
@@ -80,6 +83,16 @@ public class CrudApp1Application {
         studentDAO.save(newStudent3);
 
 
+    }
+    private void queryForStudent(StudentDAO studentDAO) {
+
+        //obtine lista de studenti
+        List<Student> theStudents = studentDAO.findAll();
+
+        //afiseaza lista de studenti
+        for (Student newStudent : theStudents) {
+            System.out.println(newStudent);
+        }
     }
 
 }
